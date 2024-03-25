@@ -7,12 +7,18 @@ return {
         direction = 'float',
         persist_mode = false,
         float_opts = {
-          border = 'shadow',
+          border = 'single',
           width = 80,
-          height = 10,
+          height = 15,
           row = 37,
-          winblend = 5,
+          winblend = 3,
+          titlepos = 'center',
         },
+        autochdir = true,
+        hide_numbers = true,
+        auto_scroll = true,
+        -- set transparency
+        shade_filetypes = {},
       }
     end,
   },
