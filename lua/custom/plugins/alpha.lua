@@ -44,8 +44,10 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button('f', 'Recently Opened Files', ':Telescope oldfiles<CR>'),
       -- recent sessions
-      dashboard.button('s', 'Recent Sessions', ':Telescope session-lens search_session<CR>'),
+      dashboard.button('b', 'Bookmarks', ':Telescope marks<CR>'),
       dashboard.button('c', 'Config', ':e ~/.config/nvim/init.lua<CR>'),
+      dashboard.button('l', 'Lazy', ':Lazy<CR>'),
+      dashboard.button('m', 'Mason', ':Mason<CR>'),
       dashboard.button('q', 'Quit', ':qa<CR>'),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do
